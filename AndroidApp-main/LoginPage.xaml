@@ -1,0 +1,19 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="studentap.LoginPage">
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label Text="Login" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Username" x:Name="UsernameEntry" />
+        <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry" />
+
+        <Button Text="Login" BackgroundColor="LightBlue" Clicked="OnLoginClicked" />
+        <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" />
+
+        <Button Text="Don't have an account? Register here"
+        BackgroundColor="Transparent"
+        TextColor="Blue"
+        Clicked="OnRegisterButtonClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

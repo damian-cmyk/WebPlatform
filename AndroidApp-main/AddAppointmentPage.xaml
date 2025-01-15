@@ -1,0 +1,23 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="studentap.AddAppointmentPage"
+             Title="Add Appointment">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Add Appointment" FontSize="24" HorizontalOptions="Center" />
+
+        <!-- Entry pentru ClientID -->
+        <Label Text="Client ID" />
+        <Entry x:Name="ClientIdEntry" Placeholder="Enter Client ID" Keyboard="Numeric" />
+
+        <!-- Date Picker pentru data programării -->
+        <Label Text="Select Date" />
+        <DatePicker x:Name="DatePicker" />
+
+        <!-- Entry pentru Status -->
+        <Label Text="Status" />
+        <Entry x:Name="StatusEntry" Placeholder="Enter Status (e.g., Pending)" />
+
+        <!-- Buton pentru salvare -->
+        <Button Text="Save Appointment" BackgroundColor="LightBlue" Clicked="OnSaveAppointmentClicked" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="studentap.AddFeedbackPage"
+             Title="Add Feedback">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Add Feedback" FontSize="24" HorizontalOptions="Center" />
+
+        <!-- Entry pentru rating -->
+        <Label Text="Rating (1-5)" />
+        <Entry x:Name="RatingEntry" Keyboard="Numeric" Placeholder="Enter rating" />
+
+        <!-- Buton pentru salvare -->
+        <Button Text="Submit Feedback" BackgroundColor="LightBlue" Clicked="OnSubmitFeedbackClicked" />
+    </VerticalStackLayout>
+</ContentPage>
